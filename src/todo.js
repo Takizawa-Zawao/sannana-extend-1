@@ -8,4 +8,17 @@ class Todo extends Component {
             name: ''
         };
     }
+
+    render() {
+        const { todos } = this.state;
+        return (
+            <div>
+                <input type="text" />
+                <button>登録</button>
+                <ul>
+                    {todos.map((todo, index) => <li key={index}>{todo}</li>)}
+                </ul>
+            </div>
+        );
+    }
 }
