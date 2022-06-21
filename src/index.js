@@ -7,7 +7,7 @@ import Todo from './todo';
 
 class Index extends React.Component {
   render(){
-    return (<Todo />);
+    return <Todo />;
   }
 }
 
