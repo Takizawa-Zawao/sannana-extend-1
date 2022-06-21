@@ -15,12 +15,19 @@ class Todo extends Component {
         });
     } 
 
+    addTodo = () => {
+        const { todos, name } = this.state;
+        this.setState({
+            todos: [...todos, name]
+        });
+    }
+
     render() {
         const { todos } = this.state;
         return (
             <div>
-                <input type="text" />
-                <button>登録</button>
+                <input type="text" onInput={this.onInput} />
+                <button onClick={this.addTodo}>登録</button>
                 <ul>
                     {todos.map((todo, index) => <li key={index}>{todo}</li>)}
                 </ul>
