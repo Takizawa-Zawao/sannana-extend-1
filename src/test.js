@@ -8,6 +8,7 @@ export default class TestApp extends Component{
     }
 }
 
+alert("test");
 const app = document.getElementById("app");
 const root = createRoot(app);
 root.render(<TestApp />);
