@@ -4,8 +4,8 @@ import Component from "react";
 
 export default class TestApp extends Component{
     render(){
-        return <h1>React.</h1>
-    }
+        return <h1>React.</h1>;
+    };
 }
 
 alert("test");
