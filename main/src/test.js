@@ -12,5 +12,5 @@ export default class TestApp extends React.Component{
 
 alert("test");
 const app = document.getElementById("app");
-const root = ReactDom.createRoot(app);
+const root = ReactDOM.createRoot(app);
 root.render(<TestApp />);
